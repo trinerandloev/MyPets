@@ -9,3 +9,11 @@
 // object. For example:
 //
 // Alloy.Globals.someGlobalFunction = function(){};
+if( Ti.App.deployType !== 'production' )
+{
+	var behave = require('behave');
+
+	//run tests
+	require('specs/test1');
+	behave.run();	
+}
