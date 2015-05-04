@@ -1,15 +1,57 @@
-".container": {
-	backgroundColor:"white"
+"#view_1":{
+	layout: 'vertical',
+	height: Ti.UI.SIZE
 }
-
-"Label": {
-	width: Ti.UI.SIZE,
-	height: Ti.UI.SIZE,
-	color: "#000"
+"#pet_list":{
+	backgroundColor: 'transparent',
+	top: '55dp',
+	bottom: '40dp',
+	left: 10,
+	right: 10
 }
-
-"#label": {
-	font: {
-		fontSize: 12
+"#the_pet":{
+	top: 0,
+	left: 15,
+	bottom: 0,
+	layout: 'horizontal',
+	backgroundColor: 'transparent'
+}
+"ListItem":{
+	backgroundColor: 'transparent'
+}
+".row":{
+	height: '50dp',
+	backgroundColor: 'transparent'
+}
+"#desc":{
+	layout: 'vertical',
+	width: '78%'
+}
+".r_btn":{
+	color: 'white',
+	font:{
+		fontFamily: 'Helvetica',
+        fontSize: '35dp',
+        fontStyle: 'bold'
 	}
 }
+"#name":{
+	font:{
+        fontFamily: 'Helvetica',
+        fontSize: '25dp',
+        fontStyle: 'bold'
+	},
+    textAlign: Titanium.UI.TEXT_ALIGNMENT_LEFT,
+    width: '100%'
+}
+"#species":{
+	font:{
+        fontFamily: 'Helvetica',
+        fontSize: '15dp',
+        fontStyle: 'italic'
+	},
+    width: '99%'
+}
+
+
+

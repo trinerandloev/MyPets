@@ -1,5 +1,23 @@
-<Alloy>
+<Alloy autoStyle="true">
 	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
+		<View id="view_1">
+			<Button id="add_btn" onClick="addPet">Add Pet</Button>
+			<ListView id="pet_list" defaultItemTemplate="templatePets">
+			<Templates>
+				<ItemTemplate name="templatePets" class="row">
+					<View id="the_pet">
+						<View id="desc">
+							<Label bindId="name" id="name" />
+							<Label bindId="species" id="species" />
+						</View>
+						<Label bindId="rbtn" class="r_btn" onClick="remove"> x </Label>
+					</View>
+				</ItemTemplate>
+			</Templates>
+			<ListSection>
+            	<ListItem />
+        	</ListSection>
+			</ListView>
+		</View>
 	</Window>
 </Alloy>

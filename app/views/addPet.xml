@@ -1,0 +1,20 @@
+<Alloy>
+	<Window id="con" class="container">
+		<ScrollView id="form">
+			<View class="filler" />
+			<View class="form_row">
+				<Label id="label_name">Name:</Label>
+				<TextField id="input_name" />
+			</View>
+			<View class="form_row">
+				<Label id="label_species">Species:</Label>
+				<TextField id="input_species" />
+			</View>
+			<View id="buttons">
+				<Button id="btn_save" onClick="save">Save</Button>
+				<Button id="btn_cancel" onClick="cancel">Cancel</Button>
+			</View>
+			<View class="filler" />
+		</ScrollView>
+	</Window>
+</Alloy>

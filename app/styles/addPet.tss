@@ -1,0 +1,12 @@
+"#buttons":{
+	layout: 'horizontal',
+	top: 20,
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL
+}
+"#btn_save":{
+	right: 10
+}
+"#btn_cancel":{
+	right: 90
+}
