@@ -4,9 +4,9 @@ describe('A module for accessing the database', function() {
 	var db = require('dbAccess');
 	db.deleteAll();
 	
-	// it('demonstrates a failure', function() {
-		// expect(db.countAllRows()).notToBe(0);
-	// });
+	it('demonstrates a failure', function() {
+		expect(db.countAllRows()).notToBe(0);
+	});
 	
 	it('adds five records to the database', function() {
 		db.insertRow("Cindy", "Norwegian Forest Cat");
